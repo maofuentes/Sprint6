@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="jumbotron d-flex align-items-center justify-content-center">
+    <div class="text-center">
+        <h1 class="display-4">¡Bienvenido {{user.get_username}}!</h1>
+        <p class="lead">Esta es una pantalla de inicio con Bootstrap.</p>
+        <hr class="my-4">
+        <p>Aquí puedes agregar más información sobre tu sitio o tu proyecto.</p>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Comenzar</a>
+    </div>
+</div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h2>Característica 1</h2>
+                <p>Aquí puedes describir una característica de tu sitio o proyecto.</p>
+            </div>
+            <div class="col-md-4">
+                <h2>Característica 2</h2>
+                <p>Aquí puedes describir otra característica de tu sitio o proyecto.</p>
+            </div>
+            <div class="col-md-4">
+                <h2>Característica 3</h2>
+                <p>Aquí puedes describir una tercera característica de tu sitio o proyecto.</p>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
